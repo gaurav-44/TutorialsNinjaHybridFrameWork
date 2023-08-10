@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tutorialsninja.qa.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Totorials Ninja(failed)">
+    <classes>
+      <class name="com.tutorialsninja.qa.tester.LoginApplication">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyloginWithValidCredentials"/>
+          <include name="BeforeMethod"/>
+          <include name="verifyloginWithInValidPassword"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.tester.LoginApplication -->
+      <class name="com.tutorialsninja.qa.tester.Register">
+        <methods>
+          <include name="verifyRegisteringWithInvaliEmail"/>
+          <include name="verifyRegisteringWithValidCredentials"/>
+          <include name="afterMethod"/>
+          <include name="verifyRegisteringWithNoNewsletter"/>
+          <include name="verifyRegisteringWithNoValidCredentials"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.tester.Register -->
+      <class name="com.tutorialsninja.qa.tester.Search">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="searchNoProduct"/>
+          <include name="searchValidProduct"/>
+          <include name="BeforeMethod"/>
+          <include name="searchInValidProduct"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.tester.Search -->
+    </classes>
+  </test> <!-- Totorials Ninja(failed) -->
+</suite> <!-- Failed suite [Suite] -->
